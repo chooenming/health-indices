@@ -1,0 +1,75 @@
+Step 1: Create package
+    Go to the folder of the package
+    Use terminal to run: poetry new <package name>
+Step 2: Mention version
+    Package: Go to __init__.py to specify the version of the package
+    Test: Go to test.py file to specify the version of the package
+Step 3: Develop package
+Step 4: Import all the functions in the __init__.py in package folder
+    from .<package name> import *
+Step 5: Activate Environment 
+    Use terminal to run: poetry shell
+    then: python3
+Step 6: Import the package in the terminal and run
+    Use terminal to run: import <package name>
+    then: dir(<package name>) #should see all the available functions
+    then: from <package name> import <function>
+    then: help(<function>) #able to see the documentation of the function
+    then: call the function
+Step 7: Unit testing
+    Go to tests folder testing.py
+    insert: from <package name> import *
+    write unit test using assert
+Step 8: Run unit tests
+    Use terminal to run: pytest (exit python3 venv)
+    Use : pytest -v (to view more details of each function testing result)
+    Use: pytest -k <function> (to test specific function only)
+Step 9: Refactoring (does not change the function of the code yet improves the internal structure)
+    Analyse the given Python modules and compute Cyclomatic Complexity (CC)
+    Use terminal to run: radon cc <package code file>
+    Output interpretation: F=function, A=easy
+    run to have more details: radon cc <package code file> -s
+    Output interpretation: lower number, easier code
+
+    Analyse the maintainability of the code
+    Use terminal to run: radon mi <package code file> -s
+
+    More details about the code maintainability
+    Use terminal to run: radon hal <package code file>
+
+    To check for used and unused modules/functions
+    Use terminal to run: vulture <package code file>
+
+Step 10: Reformat the code (to have cleaner code)
+    Use terminal to run: black <package code file>
+
+Step 11: Documentation (README.md)
+    Include sections:
+    - package name and description
+    - purpose of the package
+    - features
+    - getting started
+    - installation
+    - usage
+    - examples
+    - api
+        - create api_reference.md file
+        - copy all the functions, with the format
+    - author
+
+Step 12: Compile the documentation to .rst format
+    Use terminal to run: pandoc README.md --from markdown --to rst -s -o README.rst
+
+Step 13: Update toml file to include necessary info
+
+Step 14: Make sure everything is suspended
+    Use terminal to run: poetry check
+
+Step 15: Build the package
+    Use terminal to run: poetry build
+    After that, there is a dist folder created, with .whl and .tar.gz file created
+
+
+# Notes
+- use exit() to exit poetry venv
+
