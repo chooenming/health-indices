@@ -69,6 +69,8 @@ Step 15: Build the package
     Use terminal to run: poetry build
     After that, there is a dist folder created, with .whl and .tar.gz file created
 
+Step 16: Deployment to PyPI
+    Use terminal to run: poetry publish
 
 # Notes
 - use exit() to exit poetry venv
