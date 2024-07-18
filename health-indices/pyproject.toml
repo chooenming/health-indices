@@ -5,8 +5,8 @@ description = "A unified collection of health indices and indicators eg bmi, bai
 authors = ["Choo En Ming <chooenming@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/jcharistech/health-indices/tree/main"
-repository = "https://github.com/jcharistech/health-indices/tree/main"
+homepage = "https://github.com/chooenming/health-indices"
+repository = "https://github.com/chooenming/health-indices"
 keywords = ["health-indices", "health-indicators", "bmi", "bodymassindex", "bai", "birth-rate", "chooenming"]
 
 [tool.poetry.dependencies]
