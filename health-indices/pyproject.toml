@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "health-indices"
+version = "0.0.1"
+description = "A unified collection of health indices and indicators eg bmi, bai, etc"
+authors = ["Choo En Ming <chooenming@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jcharistech/health-indices/tree/main"
+repository = "https://github.com/jcharistech/health-indices/tree/main"
+keywords = ["health-indices", "health-indicators", "bmi", "bodymassindex", "bai", "birth-rate", "chooenming"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
